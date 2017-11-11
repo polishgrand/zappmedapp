@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    <start>
+        <element name="transactions">
+            <element name="range">
+                <element name="from">
+                    <data type="NMTOKEN"/>
+                </element>
+                <element name="to">
+                    <data type="NMTOKEN"/>
+                </element>
+                <element name="sections">
+                    <text/>
+                </element>
+            </element>
+            <oneOrMore>
+                <element name="transaction">
+                    <element name="parentId">
+                        <empty/>
+                    </element>
+                    <element name="CustomerLogin">
+                        <data type="NMTOKEN"/>
+                    </element>
+                    <element name="CustomerEmail">
+                        <text/>
+                    </element>
+                    <element name="CustomerName">
+                        <text/>
+                    </element>
+                    <element name="CustomerPhone">
+                        <text/>
+                    </element>
+                    <element name="CustomerAddress">
+                        <text/>
+                    </element>
+                    <element name="CustomerZip">
+                        <data type="NMTOKEN"/>
+                    </element>
+                    <element name="CustomerCity">
+                        <data type="NCName"/>
+                    </element>
+                    <element name="CustomerCountryCode">
+                        <data type="NCName"/>
+                    </element>
+                    <element name="CustomerCountryName">
+                        <data type="NCName"/>
+                    </element>
+                    <element name="RecipientName">
+                        <text/>
+                    </element>
+                    <element name="RecipientCompanyName">
+                        <empty/>
+                    </element>
+                    <element name="RecipientPhone">
+                        <text/>
+                    </element>
+                    <element name="RecipientAddress">
+                        <text/>
+                    </element>
+                    <element name="RecipientZip">
+                        <data type="NMTOKEN"/>
+                    </element>
+                    <element name="RecipientCity">
+                        <data type="NCName"/>
+                    </element>
+                    <element name="RecipientCountryCode">
+                        <data type="NCName"/>
+                    </element>
+                    <element name="RecipientCountryName">
+                        <data type="NCName"/>
+                    </element>
+                    <ref name="Name"/>
+                    <element name="OrderId">
+                        <data type="integer"/>
+                    </element>
+                    <element name="positions">
+                        <element name="position">
+                            <ref name="transactionId"/>
+                            <ref name="Name"/>
+                            <element name="Quantity">
+                                <data type="integer"/>
+                            </element>
+                        </element>
+                    </element>
+                    <optional>
+                        <element name="notes">
+                            <element name="note">
+                                <ref name="transactionId"/>
+                                <element name="Author">
+                                    <empty/>
+                                </element>
+                                <element name="Date">
+                                    <text/>
+                                </element>
+                                <element name="Note">
+                                    <text/>
+                                </element>
+                            </element>
+                        </element>
+                    </optional>
+                </element>
+            </oneOrMore>
+        </element>
+    </start>
+    <define name="Name">
+        <element name="Name">
+            <text/>
+        </element>
+    </define>
+    <define name="transactionId">
+        <element name="transactionId">
+            <data type="integer"/>
+        </element>
+    </define>
+</grammar>
