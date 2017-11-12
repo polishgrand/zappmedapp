@@ -1,25 +1,27 @@
-package org.zappmed.app.core;
+package org.zappmed.app.model.xml;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import java.util.ArrayList;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+
 import java.util.Date;
-import java.util.List;
 
-@XmlRootElement
-public class Transactions {
+public class Range {
 
+    @JacksonXmlProperty(localName = "from")
     private Date dateFrom;
-    private Date dateTo;
-    private String section;
-    private List<Transaction> transactionList = new ArrayList<>();
 
+    @JacksonXmlProperty(localName = "to")
+    private Date dateTo;
+
+    @JacksonXmlProperty(localName = "sections")
+    private String section;
+
+    public Range() {
+    }
 
     public Date getDateFrom() {
         return dateFrom;
     }
 
-    @XmlElement(name = "from")
     public void setDateFrom(Date dateFrom) {
         this.dateFrom = dateFrom;
     }
@@ -28,7 +30,6 @@ public class Transactions {
         return dateTo;
     }
 
-    @XmlElement(name = "to")
     public void setDateTo(Date dateTo) {
         this.dateTo = dateTo;
     }
@@ -41,11 +42,12 @@ public class Transactions {
         this.section = section;
     }
 
-    public List<Transaction> getTransactionList() {
-        return transactionList;
-    }
-
-    public void setTransactionList(ArrayList transactionList) {
-        this.transactionList = transactionList;
+    @Override
+    public String toString() {
+        return "Range{" +
+                "dateFrom=" + dateFrom +
+                ", dateTo=" + dateTo +
+                ", section='" + section + '\'' +
+                '}';
     }
 }
