@@ -3,6 +3,7 @@ package org.zappmed.app;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.zappmed.app.core.ObjectFromXMLGenerator;
+import org.zappmed.app.model.xml.Transaction;
 
 @SpringBootApplication
 public class AppApplication {
@@ -14,6 +15,11 @@ public class AppApplication {
 
 		objectFromXMLGenerator.generateModelFromXML();
 
-		System.out.println(objectFromXMLGenerator.getModel().getRange().toString());
+		int counter = 1;
+
+		for (Transaction transaction : objectFromXMLGenerator.getModel().getTransaction()) {
+			System.out.println(counter + ": " + transaction.toString());
+			counter++;
+		}
 	}
 }

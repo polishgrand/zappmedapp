@@ -1,194 +1,1095 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transactions>
  <range>
-  <from>2017-10-12</from>
-  <to>2017-11-11</to>
-  <sections>Oczekują na wpłatę (z góry)</sections>
+  <from>2017-10-19</from>
+  <to>2017-11-18</to>
+  <sections>Poczta Polska</sections>
  </range>
  <transaction>
   <parentId/>
-  <CustomerLogin>Sangel</CustomerLogin>
-  <CustomerEmail>sylwia.s.pawlak@gmail.com</CustomerEmail>
-  <RecipientName>Sylwia Pawlak</RecipientName>
+  <Id>38619927</Id>
+  <Name>12 KOŃCÓWEK - ZESTAW DO VITALITY ORAL-B 3D WHITE</Name>
+  <OrderId>7034974703</OrderId>
+  <CustomerLogin>justyna14_2010</CustomerLogin>
+  <CustomerEmail>justfr@wp.pl</CustomerEmail>
+  <RecipientName>Łukasz Farys</RecipientName>
   <RecipientCompanyName/>
-  <RecipientPhone>603637353</RecipientPhone>
-  <RecipientAddress>Poligonowa 26</RecipientAddress>
-  <RecipientZip>21-040</RecipientZip>
-  <RecipientCity>Świdnik</RecipientCity>
+  <RecipientPhone>502203446</RecipientPhone>
+  <RecipientAddress>Bukowie 52</RecipientAddress>
+  <RecipientZip>27-415</RecipientZip>
+  <RecipientCity>Kunów</RecipientCity>
   <RecipientCountryCode>PL</RecipientCountryCode>
   <RecipientCountryName>Polska</RecipientCountryName>
-  <DeliveryType>List ekonomiczny</DeliveryType>
-  <Name>GŁÓWKA BRAUN ORAL-B STAGES DLA DZIECI - 6 MODELI</Name>
-  <OrderId>6953736285</OrderId>
+  <DeliveryType>List polecony priorytetowy</DeliveryType>
   <positions>
    <position>
-    <transactionId>38355929</transactionId>
+    <transactionId>38619927</transactionId>
     <Name/>
+    <Quantity>1</Quantity>
    </position>
   </positions>
  </transaction>
  <transaction>
   <parentId/>
-  <CustomerLogin>paulinabaran87</CustomerLogin>
-  <CustomerEmail>paulina.baran87@gmail.com</CustomerEmail>
-  <RecipientName>Paulina Orlińska</RecipientName>
-  <RecipientCompanyName/>
-  <RecipientPhone>+48 500 298 048</RecipientPhone>
-  <RecipientAddress>SASANKI 14</RecipientAddress>
-  <RecipientZip>09-472</RecipientZip>
-  <RecipientCity>SŁUPNO</RecipientCity>
-  <RecipientCountryCode>PL</RecipientCountryCode>
-  <RecipientCountryName>Polska</RecipientCountryName>
-  <DeliveryType>List ekonomiczny</DeliveryType>
-  <Name>8 KOŃCÓWEK ORAL-B 3D WHITE DO SZCZOTECZKI VITALITY</Name>
-  <OrderId>6996036002</OrderId>
-  <positions>
-   <position>
-    <transactionId>38392912</transactionId>
-    <Name/>
-   </position>
-  </positions>
- </transaction>
- <transaction>
-  <parentId/>
-  <CustomerLogin>Client:42398472</CustomerLogin>
-  <CustomerEmail>gora504@tlen.pl</CustomerEmail>
-  <RecipientName>Andrzej Krupiński</RecipientName>
-  <RecipientCompanyName/>
-  <RecipientPhone>690509813</RecipientPhone>
-  <RecipientAddress>Powstańców 15B/704</RecipientAddress>
-  <RecipientZip>05-091</RecipientZip>
-  <RecipientCity>Ząbki</RecipientCity>
-  <RecipientCountryCode>PL</RecipientCountryCode>
-  <RecipientCountryName>Polska</RecipientCountryName>
-  <DeliveryType>List polecony ekonomiczny</DeliveryType>
-  <Name>8 x KOŃCÓWKA DO SZCZOTECZKI ORAL-B CROSS ACTION</Name>
-  <OrderId>7038043811</OrderId>
-  <positions>
-   <position>
-    <transactionId>38393771</transactionId>
-    <Name/>
-   </position>
-  </positions>
- </transaction>
- <transaction>
-  <parentId/>
-  <CustomerLogin>szfeda</CustomerLogin>
-  <CustomerEmail>ewa.szweda83@wp.pl</CustomerEmail>
-  <RecipientName>Ewa Pasztor</RecipientName>
-  <RecipientCompanyName/>
-  <RecipientPhone>(506)097961</RecipientPhone>
-  <RecipientAddress>Żeromskiego 31A/9</RecipientAddress>
-  <RecipientZip>96-500</RecipientZip>
-  <RecipientCity>Sochaczew</RecipientCity>
+  <Id>38629307</Id>
+  <Name>2 x GŁÓWKA BRAUN ORAL-B STAGES DZIECI STAR WARS, 1 x KOŃCÓWKA GŁÓWKA ORAL-B BRAUN PRECISION CLEAN</Name>
+  <OrderId>6953735371, 6953735793</OrderId>
+  <CustomerLogin>Tusia00</CustomerLogin>
+  <CustomerEmail>warchol.marta@wp.pl</CustomerEmail>
+  <RecipientName>Marta Deja</RecipientName>
+  <RecipientCompanyName>Artex IT</RecipientCompanyName>
+  <RecipientPhone>600411856</RecipientPhone>
+  <RecipientAddress>Podmiejska 6a</RecipientAddress>
+  <RecipientZip>26-600</RecipientZip>
+  <RecipientCity>Radom</RecipientCity>
   <RecipientCountryCode>PL</RecipientCountryCode>
   <RecipientCountryName>Polska</RecipientCountryName>
   <DeliveryType>List priorytetowy</DeliveryType>
-  <Name>4 KOŃCÓWKI - ZESTAW DO VITALITY ORAL-B FLEXI SOFT</Name>
-  <OrderId>7035036470</OrderId>
+  <subtransactions>
+   <subtransaction>
+    <transactionId>38629307</transactionId>
+    <Id>38629305</Id>
+    <Name>2 x GŁÓWKA BRAUN ORAL-B STAGES DZIECI STAR WARS</Name>
+    <OrderId>6953735371</OrderId>
+   </subtransaction>
+   <subtransaction>
+    <transactionId>38629307</transactionId>
+    <Id>38629306</Id>
+    <Name>1 x KOŃCÓWKA GŁÓWKA ORAL-B BRAUN PRECISION CLEAN</Name>
+    <OrderId>6953735793</OrderId>
+   </subtransaction>
+  </subtransactions>
   <positions>
    <position>
-    <transactionId>38396768</transactionId>
+    <transactionId>38629307</transactionId>
     <Name/>
+    <Quantity>1</Quantity>
    </position>
-  </positions>
- </transaction>
- <transaction>
-  <parentId/>
-  <CustomerLogin>tata_atoma</CustomerLogin>
-  <CustomerEmail>tata_atoma@o2.pl</CustomerEmail>
-  <RecipientName>Andrzej Tomczak</RecipientName>
-  <RecipientCompanyName/>
-  <RecipientPhone>693240969</RecipientPhone>
-  <RecipientAddress>ul. Słowicza 22</RecipientAddress>
-  <RecipientZip>62-020</RecipientZip>
-  <RecipientCity>Swarzedz</RecipientCity>
-  <RecipientCountryCode>PL</RecipientCountryCode>
-  <RecipientCountryName>Polska</RecipientCountryName>
-  <DeliveryType>List ekonomiczny</DeliveryType>
-  <Name>4 KOŃCÓWKI ORAL-B 3D WHITE DO SZCZOTECZKI VITALITY</Name>
-  <OrderId>6996038491</OrderId>
-  <positions>
    <position>
-    <transactionId>38398865</transactionId>
+    <transactionId>38629307</transactionId>
     <Name/>
-   </position>
-  </positions>
- </transaction>
- <transaction>
-  <parentId/>
-  <CustomerLogin>semi85</CustomerLogin>
-  <CustomerEmail>fox.ulka@interia.pl</CustomerEmail>
-  <RecipientName>Paczkomat NYS451</RecipientName>
-  <RecipientCompanyName/>
-  <RecipientPhone>793316366</RecipientPhone>
-  <RecipientAddress>Piłsudskiego 21</RecipientAddress>
-  <RecipientZip>48-300</RecipientZip>
-  <RecipientCity>Nysa</RecipientCity>
-  <RecipientCountryCode>PL</RecipientCountryCode>
-  <RecipientCountryName>Polska</RecipientCountryName>
-  <DeliveryType>Odbiór w punkcie po przedpłacie - Paczkomaty 24/7</DeliveryType>
-  <Name>GŁÓWKA BRAUN ORAL-B STAGES DLA DZIECI - 6 MODELI</Name>
-  <OrderId>6953735380</OrderId>
-  <positions>
-   <position>
-    <transactionId>38402841</transactionId>
-    <Name/>
+    <Quantity>2</Quantity>
    </position>
   </positions>
   <notes>
    <note>
-    <transactionId>38402841</transactionId>
+    <transactionId>38629307</transactionId>
     <Author/>
-    <Date>2017-11-09 20:54:37</Date>
-    <Note>Star wars</Note>
+    <Date>2017-11-17 06:30:56</Date>
+    <Note>Biuro czynne od 08-16</Note>
    </note>
   </notes>
  </transaction>
  <transaction>
   <parentId/>
-  <CustomerLogin>Pawel29_1K</CustomerLogin>
-  <CustomerEmail>Pawel.kowaluk@wp.pl</CustomerEmail>
-  <RecipientName>Paczkomat GOL02N</RecipientName>
+  <Id>38633055</Id>
+  <Name>16 KOŃCÓWEK - ZESTAW DO VITALITY ORAL-B 3D WHITE</Name>
+  <OrderId>7035736274</OrderId>
+  <CustomerLogin/>
+  <CustomerEmail>a.lechwar@auchan.pl</CustomerEmail>
+  <RecipientName>Alicja Wydro</RecipientName>
   <RecipientCompanyName/>
-  <RecipientPhone>608519482</RecipientPhone>
-  <RecipientAddress>Zakładowa 2</RecipientAddress>
-  <RecipientZip>72-100</RecipientZip>
-  <RecipientCity>Goleniów</RecipientCity>
+  <RecipientPhone>722133623</RecipientPhone>
+  <RecipientAddress>ul. Erazma Jerzmanowskiego 26/71</RecipientAddress>
+  <RecipientZip>30-836</RecipientZip>
+  <RecipientCity>Kraków</RecipientCity>
   <RecipientCountryCode>PL</RecipientCountryCode>
   <RecipientCountryName>Polska</RecipientCountryName>
-  <DeliveryType>Allegro Paczkomaty InPost</DeliveryType>
-  <Name>8 KOŃCÓWEK DO MYCIA ZĘBÓW DLA DZIECI BRAUN ORAL-B, 8 x ZESTAW DO VITALITY ORAL-B CROSS ACTION, 12...</Name>
-  <OrderId>7035130149, 7038054649, 7038114027</OrderId>
+  <DeliveryType>List ekonomiczny</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38633055</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38633336</Id>
+  <Name>4 KOŃCÓWKI ORAL-B 3D WHITE DO SZCZOTECZKI VITALITY</Name>
+  <OrderId>6996038491</OrderId>
+  <CustomerLogin>blackg82</CustomerLogin>
+  <CustomerEmail>blackg@o2.pl</CustomerEmail>
+  <RecipientName>Grzegorz Góra</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>608679159</RecipientPhone>
+  <RecipientAddress>Kozubszczyzna 9</RecipientAddress>
+  <RecipientZip>21-030</RecipientZip>
+  <RecipientCity>Motycz</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List priorytetowy</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38633336</transactionId>
+    <Name/>
+    <Quantity>2</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38633534</Id>
+  <Name>4 KOŃCÓWKI DO MYCIA ZĘBÓW DLA DZIECI BRAUN ORAL-B</Name>
+  <OrderId>7035129644</OrderId>
+  <CustomerLogin>lary_18_2005</CustomerLogin>
+  <CustomerEmail>marcinek990@buziaczek.pl</CustomerEmail>
+  <RecipientName>Marcin Prochownik</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>725163334</RecipientPhone>
+  <RecipientAddress>Marii Konopnickiej4c/9</RecipientAddress>
+  <RecipientZip>44-370</RecipientZip>
+  <RecipientCity>Pszów</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List priorytetowy</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38633534</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+  <notes>
+   <note>
+    <transactionId>38633534</transactionId>
+    <Author/>
+    <Date>2017-11-17 11:00:12</Date>
+    <Note>Witam zakupiłem u Państwa komplet końcówek do szczoteczki. Proszę o wiadomość mail gdy przesyłka zostanie wysłana. Pozdrawiam Marcin Prochownik ( lary_18_2005)</Note>
+   </note>
+  </notes>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38634413</Id>
+  <Name>4 KOŃCÓWKI DO SZCZOTECZKI ORAL-B 3D WHITE 4 SZTUKI</Name>
+  <OrderId>6996047983</OrderId>
+  <CustomerLogin>Masluchowo</CustomerLogin>
+  <CustomerEmail>joanna.stud@wp.pl</CustomerEmail>
+  <RecipientName>Joanna Batory</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>513 230 222</RecipientPhone>
+  <RecipientAddress>al. 29 listopada 193/102</RecipientAddress>
+  <RecipientZip>31-241</RecipientZip>
+  <RecipientCity>Kraków</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List ekonomiczny</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38634413</transactionId>
+    <Name/>
+    <Quantity>3</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38634700</Id>
+  <Name>GŁÓWKA BRAUN ORAL-B STAGES DLA DZIECI - 6 MODELI, 1 x KOŃCÓWKA GŁÓWKA ORAL-B BRAUN PRECISION CLEAN</Name>
+  <OrderId>6953736285, 6953735793</OrderId>
+  <CustomerLogin>DamianRM</CustomerLogin>
+  <CustomerEmail>damiangorczyca@vp.pl</CustomerEmail>
+  <RecipientName>Damian Gorczyca</RecipientName>
+  <RecipientCompanyName>Ratownictwo Medyczne Damian Gorczyca</RecipientCompanyName>
+  <RecipientPhone>512-713-156</RecipientPhone>
+  <RecipientAddress>ul. Relaksowa 9/84</RecipientAddress>
+  <RecipientZip>20-819</RecipientZip>
+  <RecipientCity>Lublin</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List polecony ekonomiczny</DeliveryType>
   <subtransactions>
    <subtransaction>
-    <transactionId>38445015</transactionId>
-    <Name>8 KOŃCÓWEK DO MYCIA ZĘBÓW DLA DZIECI BRAUN ORAL-B</Name>
-    <OrderId>7035130149</OrderId>
+    <transactionId>38634700</transactionId>
+    <Id>38633010</Id>
+    <Name>GŁÓWKA BRAUN ORAL-B STAGES DLA DZIECI - 6 MODELI</Name>
+    <OrderId>6953736285</OrderId>
    </subtransaction>
    <subtransaction>
-    <transactionId>38445015</transactionId>
-    <Name>8 x ZESTAW DO VITALITY ORAL-B CROSS ACTION</Name>
-    <OrderId>7038054649</OrderId>
-   </subtransaction>
-   <subtransaction>
-    <transactionId>38445015</transactionId>
-    <Name>12 KOŃCÓWEK - ZESTAW DO VITALITY ORAL-B FLEXI SOFT</Name>
-    <OrderId>7038114027</OrderId>
+    <transactionId>38634700</transactionId>
+    <Id>38633011</Id>
+    <Name>1 x KOŃCÓWKA GŁÓWKA ORAL-B BRAUN PRECISION CLEAN</Name>
+    <OrderId>6953735793</OrderId>
    </subtransaction>
   </subtransactions>
   <positions>
    <position>
-    <transactionId>38445015</transactionId>
+    <transactionId>38634700</transactionId>
     <Name/>
+    <Quantity>1</Quantity>
    </position>
    <position>
-    <transactionId>38445015</transactionId>
+    <transactionId>38634700</transactionId>
     <Name/>
+    <Quantity>2</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38634953</Id>
+  <Name>4 x GŁÓWKA KOŃCÓWKA BRAUN ORAL-B PRECISION CLEAN</Name>
+  <OrderId>6953736250</OrderId>
+  <CustomerLogin>lecho_47</CustomerLogin>
+  <CustomerEmail>wozniaklech@wp.pl</CustomerEmail>
+  <RecipientName>Lech Woźniak</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>601803639</RecipientPhone>
+  <RecipientAddress>Powstańców Warszawy 4</RecipientAddress>
+  <RecipientZip>21-100</RecipientZip>
+  <RecipientCity>Lubartów</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List priorytetowy</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38634953</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38635857</Id>
+  <Name>4 x GŁÓWKA KOŃCÓWKA BRAUN ORAL-B PRECISION CLEAN</Name>
+  <OrderId>6953736250</OrderId>
+  <CustomerLogin>konrad_dr</CustomerLogin>
+  <CustomerEmail>konrad.stanczyk@wp.pl</CustomerEmail>
+  <RecipientName>Konrad Stańczyk</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>601700252</RecipientPhone>
+  <RecipientAddress>Piaskowa 9A/19</RecipientAddress>
+  <RecipientZip>05-119</RecipientZip>
+  <RecipientCity>legionowo</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List ekonomiczny</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38635857</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38636410</Id>
+  <Name>4 KOŃCÓWKI DO MYCIA ZĘBÓW DLA DZIECI BRAUN ORAL-B</Name>
+  <OrderId>7035129644</OrderId>
+  <CustomerLogin>kinderek</CustomerLogin>
+  <CustomerEmail>kiiiiinga@gmail.com</CustomerEmail>
+  <RecipientName>Kinga Giełdowska</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>504759221</RecipientPhone>
+  <RecipientAddress>Aronii 16</RecipientAddress>
+  <RecipientZip>05-515</RecipientZip>
+  <RecipientCity>Mysiadło</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List polecony ekonomiczny</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38636410</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38636803</Id>
+  <Name>KOŃCÓWKA GŁÓWKA BRAUN ORAL-B PRECISION CLEAN +29%</Name>
+  <OrderId>6953735830</OrderId>
+  <CustomerLogin/>
+  <CustomerEmail>zuzanna.bokus@wp.pl</CustomerEmail>
+  <RecipientName>Zuzanna Kościesza</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>503090317</RecipientPhone>
+  <RecipientAddress>al. Stanów Zjednoczonychj 53/302</RecipientAddress>
+  <RecipientZip>04-028</RecipientZip>
+  <RecipientCity>Warszawa</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List priorytetowy</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38636803</transactionId>
+    <Name/>
+    <Quantity>2</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38637969</Id>
+  <Name>4 x GŁÓWKA KOŃCÓWKA BRAUN ORAL-B PRECISION CLEAN</Name>
+  <OrderId>6953736250</OrderId>
+  <CustomerLogin>wrobelek92</CustomerLogin>
+  <CustomerEmail>wroblewski92@wp.pl</CustomerEmail>
+  <RecipientName>Wojciech Wróblewski</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>504289769</RecipientPhone>
+  <RecipientAddress>Piotra Skargi 12/2</RecipientAddress>
+  <RecipientZip>58-500</RecipientZip>
+  <RecipientCity>Jelenia Góra</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List priorytetowy</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38637969</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38638054</Id>
+  <Name>ORAL-B STAR WARS DZIECI + AKU + TIMER + 2 KOŃCÓWKI</Name>
+  <OrderId>7046070194</OrderId>
+  <CustomerLogin>ewakaz6</CustomerLogin>
+  <CustomerEmail>ewakaz6@wp.pl</CustomerEmail>
+  <RecipientName>Ewa Kaźmierczak</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>698168430</RecipientPhone>
+  <RecipientAddress>Mickiewicza 41</RecipientAddress>
+  <RecipientZip>05-230</RecipientZip>
+  <RecipientCity>Kobyłka</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List polecony priorytetowy</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38638054</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+  <notes>
+   <note>
+    <transactionId>38638054</transactionId>
+    <Author/>
+    <Date>2017-11-17 13:48:39</Date>
+    <Note>ewakaz6 - poproszę czarna postac</Note>
+   </note>
+  </notes>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38638209</Id>
+  <Name>12 KOŃCÓWEK - ZESTAW DO VITALITY ORAL-B 3D WHITE</Name>
+  <OrderId>7034974703</OrderId>
+  <CustomerLogin>anetan80</CustomerLogin>
+  <CustomerEmail>aneta_nysk@o2.pl</CustomerEmail>
+  <RecipientName>Aneta Strzyżewska</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>608420118</RecipientPhone>
+  <RecipientAddress>Konotopska 1 m. 12</RecipientAddress>
+  <RecipientZip>02-496</RecipientZip>
+  <RecipientCity>Warszawa</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List polecony ekonomiczny</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38638209</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38638774</Id>
+  <Name>4 KOŃCÓWKI - ZESTAW DO VITALITY ORAL-B FLEXI SOFT, GŁÓWKA BRAUN ORAL-B STAGES DLA DZIECI - 6 MODELI</Name>
+  <OrderId>7035036470, 6953736285</OrderId>
+  <CustomerLogin>marcia_83</CustomerLogin>
+  <CustomerEmail>martaja2@interia.pl</CustomerEmail>
+  <RecipientName>Marta Żołądek</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>0507039570</RecipientPhone>
+  <RecipientAddress>Narutowicza 4/27</RecipientAddress>
+  <RecipientZip>95-050</RecipientZip>
+  <RecipientCity>Konstantynów Łódzki</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List ekonomiczny</DeliveryType>
+  <subtransactions>
+   <subtransaction>
+    <transactionId>38638774</transactionId>
+    <Id>38638743</Id>
+    <Name>4 KOŃCÓWKI - ZESTAW DO VITALITY ORAL-B FLEXI SOFT</Name>
+    <OrderId>7035036470</OrderId>
+   </subtransaction>
+   <subtransaction>
+    <transactionId>38638774</transactionId>
+    <Id>38638746</Id>
+    <Name>GŁÓWKA BRAUN ORAL-B STAGES DLA DZIECI - 6 MODELI</Name>
+    <OrderId>6953736285</OrderId>
+   </subtransaction>
+  </subtransactions>
+  <positions>
+   <position>
+    <transactionId>38638774</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
    </position>
    <position>
-    <transactionId>38445015</transactionId>
+    <transactionId>38638774</transactionId>
     <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38639014</Id>
+  <Name>5 x KOŃCÓWKA GŁÓWKA ORAL-B BRAUN PRECISION CLEAN</Name>
+  <OrderId>6953735863</OrderId>
+  <CustomerLogin>irlena0312</CustomerLogin>
+  <CustomerEmail>irlena0312@o2.pl</CustomerEmail>
+  <RecipientName>Piotr Rzepecki</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>694770725</RecipientPhone>
+  <RecipientAddress>Zdyszewice 34</RecipientAddress>
+  <RecipientZip>26-330</RecipientZip>
+  <RecipientCity>Żarnów</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List ekonomiczny</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38639014</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38639522</Id>
+  <Name>5 x KOŃCÓWKA GŁÓWKA ORAL-B BRAUN PRECISION CLEAN, KOŃCÓWKI GŁÓWKI ORAL-B STAGES POWER DLA DZIECI</Name>
+  <OrderId>6953735863, 6953735420</OrderId>
+  <CustomerLogin>tullim</CustomerLogin>
+  <CustomerEmail>i.a.marcinkiewicz@gmail.com</CustomerEmail>
+  <RecipientName>Izabela Marcinkiewicz</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>500446251</RecipientPhone>
+  <RecipientAddress>ul. Czajkowskiego 2 m. 7</RecipientAddress>
+  <RecipientZip>92-511</RecipientZip>
+  <RecipientCity>Łódź</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List ekonomiczny</DeliveryType>
+  <subtransactions>
+   <subtransaction>
+    <transactionId>38639522</transactionId>
+    <Id>38639518</Id>
+    <Name>5 x KOŃCÓWKA GŁÓWKA ORAL-B BRAUN PRECISION CLEAN</Name>
+    <OrderId>6953735863</OrderId>
+   </subtransaction>
+   <subtransaction>
+    <transactionId>38639522</transactionId>
+    <Id>38639519</Id>
+    <Name>KOŃCÓWKI GŁÓWKI ORAL-B STAGES POWER DLA DZIECI</Name>
+    <OrderId>6953735420</OrderId>
+   </subtransaction>
+  </subtransactions>
+  <positions>
+   <position>
+    <transactionId>38639522</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+   <position>
+    <transactionId>38639522</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38640224</Id>
+  <Name>BRAUN ORAL-B STAGES DZIECI FROZEN DB3010 + BATERIA</Name>
+  <OrderId>7048076073</OrderId>
+  <CustomerLogin>Client:42734325</CustomerLogin>
+  <CustomerEmail>paulina.pilszak@onet.pl</CustomerEmail>
+  <RecipientName>Paulina Pilszak</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>500636309</RecipientPhone>
+  <RecipientAddress>Marcówka 136</RecipientAddress>
+  <RecipientZip>34-210</RecipientZip>
+  <RecipientCity>Zembrzyce</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List polecony ekonomiczny</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38640224</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+  <notes>
+   <note>
+    <transactionId>38640224</transactionId>
+    <Author/>
+    <Date>2017-11-17 15:33:00</Date>
+    <Note>Wzór: Anna i Elza</Note>
+   </note>
+  </notes>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38640394</Id>
+  <Name>4 KOŃCÓWKI ORAL-B 3D WHITE DO SZCZOTECZKI VITALITY</Name>
+  <OrderId>6996038491</OrderId>
+  <CustomerLogin>__aniolek__</CustomerLogin>
+  <CustomerEmail>paulina.turosinska@poczta.fm</CustomerEmail>
+  <RecipientName>Paulina Turosińska</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>795619425</RecipientPhone>
+  <RecipientAddress>ul.Wiejska 22-28 m.14</RecipientAddress>
+  <RecipientZip>81-068</RecipientZip>
+  <RecipientCity>Gdynia</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List ekonomiczny</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38640394</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38640418</Id>
+  <Name>12 KOŃCÓWEK - ZESTAW DO VITALITY ORAL-B 3D WHITE</Name>
+  <OrderId>7034974703</OrderId>
+  <CustomerLogin>lidzia0202</CustomerLogin>
+  <CustomerEmail>lidzia.buziaczek@gazeta.pl</CustomerEmail>
+  <RecipientName>Lidia Arent</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>507849710</RecipientPhone>
+  <RecipientAddress>Jana Olbrachta 124/m.4</RecipientAddress>
+  <RecipientZip>01-373</RecipientZip>
+  <RecipientCity>Warszawa</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List priorytetowy</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38640418</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38641154</Id>
+  <Name>8 x KOŃCÓWKA DO ZĘBÓW DLA DZIECI ORAL-B VITALITY, 16 KOŃCÓWEK - ZESTAW DO VITALITY ORAL-B 3D WHITE</Name>
+  <OrderId>7035809714, 7035736274</OrderId>
+  <CustomerLogin>pepe246</CustomerLogin>
+  <CustomerEmail>laskawi@interia.pl</CustomerEmail>
+  <RecipientName>piotrek łyskawa</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>796802424</RecipientPhone>
+  <RecipientAddress>pl.zamkowy 27/4</RecipientAddress>
+  <RecipientZip>55-200</RecipientZip>
+  <RecipientCity>oława</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List priorytetowy</DeliveryType>
+  <subtransactions>
+   <subtransaction>
+    <transactionId>38641154</transactionId>
+    <Id>38641149</Id>
+    <Name>8 x KOŃCÓWKA DO ZĘBÓW DLA DZIECI ORAL-B VITALITY</Name>
+    <OrderId>7035809714</OrderId>
+   </subtransaction>
+   <subtransaction>
+    <transactionId>38641154</transactionId>
+    <Id>38641150</Id>
+    <Name>16 KOŃCÓWEK - ZESTAW DO VITALITY ORAL-B 3D WHITE</Name>
+    <OrderId>7035736274</OrderId>
+   </subtransaction>
+  </subtransactions>
+  <positions>
+   <position>
+    <transactionId>38641154</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+   <position>
+    <transactionId>38641154</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38641400</Id>
+  <Name>8 x KOŃCÓWKA DO ZĘBÓW DLA DZIECI ORAL-B VITALITY</Name>
+  <OrderId>7035809714</OrderId>
+  <CustomerLogin>natka2989</CustomerLogin>
+  <CustomerEmail>renia.rusnak@onet.eu</CustomerEmail>
+  <RecipientName>Renata Szczęch</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>889028179</RecipientPhone>
+  <RecipientAddress>OS.za Wodą, OBOK nr 12</RecipientAddress>
+  <RecipientZip>34-471</RecipientZip>
+  <RecipientCity>Krauszów</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List polecony priorytetowy</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38641400</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38645828</Id>
+  <Name>8 KOŃCÓWEK DO MYCIA ZĘBÓW DLA DZIECI BRAUN ORAL-B</Name>
+  <OrderId>7035130149</OrderId>
+  <CustomerLogin>karola241089</CustomerLogin>
+  <CustomerEmail>karola241089@wp.pl</CustomerEmail>
+  <RecipientName>Karolina Wolańska</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>570096548</RecipientPhone>
+  <RecipientAddress>Łożnica 26</RecipientAddress>
+  <RecipientZip>72-122</RecipientZip>
+  <RecipientCity>Łożnica</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List priorytetowy</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38645828</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38646041</Id>
+  <Name>4 x KOŃCÓWKA DO ZĘBÓW DLA DZIECI ORAL-B VITALITY</Name>
+  <OrderId>7035818133</OrderId>
+  <CustomerLogin>skraba290496</CustomerLogin>
+  <CustomerEmail>skraba290496@interia.pl</CustomerEmail>
+  <RecipientName>Łukasz Skraba</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>509531985</RecipientPhone>
+  <RecipientAddress>Binczrowa 78</RecipientAddress>
+  <RecipientZip>33-332</RecipientZip>
+  <RecipientCity>Florynka</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>Pocztex Kurier48 pobraniowy</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38646041</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38646735</Id>
+  <Name>KOŃCÓWKA GŁÓWKA BRAUN ORAL-B PRECISION CLEAN +29%</Name>
+  <OrderId>6953735830</OrderId>
+  <CustomerLogin>agusiag69</CustomerLogin>
+  <CustomerEmail>neme14@interia.pl</CustomerEmail>
+  <RecipientName>Agata Grabowska</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>690623930</RecipientPhone>
+  <RecipientAddress>Wolności 52</RecipientAddress>
+  <RecipientZip>57-300</RecipientZip>
+  <RecipientCity>Kłodzko</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List polecony ekonomiczny</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38646735</transactionId>
+    <Name/>
+    <Quantity>2</Quantity>
+   </position>
+  </positions>
+  <notes>
+   <note>
+    <transactionId>38646735</transactionId>
+    <Author/>
+    <Date>2017-11-17 20:53:29</Date>
+    <Note>Witam. Proszę o kontakt, gdy przesyłka zostanie wysłana. Pozdrawiam</Note>
+   </note>
+  </notes>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38647552</Id>
+  <Name>6 x GŁÓWKA KOŃCÓWKA BRAUN ORAL-B PRECISION CLEAN</Name>
+  <OrderId>6953735816</OrderId>
+  <CustomerLogin>KrystianA3</CustomerLogin>
+  <CustomerEmail>anulka89@onet.eu</CustomerEmail>
+  <RecipientName>Krystian Augustyn</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>077 4376 009</RecipientPhone>
+  <RecipientAddress>Grabina 88</RecipientAddress>
+  <RecipientZip>48-210</RecipientZip>
+  <RecipientCity>Biała</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List priorytetowy</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38647552</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38647748</Id>
+  <Name>4 KOŃCÓWKI DO SZCZOTECZKI ORAL-B 3D WHITE 4 SZTUKI</Name>
+  <OrderId>6996047983</OrderId>
+  <CustomerLogin>przemkokol</CustomerLogin>
+  <CustomerEmail>przemo-35@o2.pl</CustomerEmail>
+  <RecipientName>Przemysław Ablewicz</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>608373523</RecipientPhone>
+  <RecipientAddress>Leśna 1</RecipientAddress>
+  <RecipientZip>42-600</RecipientZip>
+  <RecipientCity>Tarnowskie Góry</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List polecony ekonomiczny</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38647748</transactionId>
+    <Name/>
+    <Quantity>2</Quantity>
+   </position>
+  </positions>
+  <notes>
+   <note>
+    <transactionId>38647748</transactionId>
+    <Author/>
+    <Date>2017-11-17 21:43:15</Date>
+    <Note>Witam. Bardzo proszę, aby towar był nowy i nieuszkodzony. Proszę dobrze zapakować przesyłkę. Dziękuję i pozdrawiam.</Note>
+   </note>
+  </notes>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38647755</Id>
+  <Name>2x GŁÓWKA KOŃCÓWKA BRAUN ORAL-B STAGES DLA DZIECI</Name>
+  <OrderId>6953735417</OrderId>
+  <CustomerLogin>Kendit</CustomerLogin>
+  <CustomerEmail>shop@apghome.pl</CustomerEmail>
+  <RecipientName>Paweł Grzeczyński</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>0504000625</RecipientPhone>
+  <RecipientAddress>Wólczyńska 63/296</RecipientAddress>
+  <RecipientZip>01-931</RecipientZip>
+  <RecipientCity>Warszawa</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List ekonomiczny</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38647755</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38648407</Id>
+  <Name>12 KOŃCÓWEK - ZESTAW DO VITALITY ORAL-B 3D WHITE</Name>
+  <OrderId>7034974703</OrderId>
+  <CustomerLogin>kristof-k22</CustomerLogin>
+  <CustomerEmail>eva-walczak@wp.pl</CustomerEmail>
+  <RecipientName>Ewa Walczak</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>663718406</RecipientPhone>
+  <RecipientAddress>Kasztanowa 40/1</RecipientAddress>
+  <RecipientZip>62-330</RecipientZip>
+  <RecipientCity>Podstolice</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List priorytetowy</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38648407</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38649115</Id>
+  <Name>4 KOŃCÓWKI ORAL-B 3D WHITE DO SZCZOTECZKI VITALITY</Name>
+  <OrderId>6996038491</OrderId>
+  <CustomerLogin>El__Presidente</CustomerLogin>
+  <CustomerEmail>el.presidente2004@gmail.com</CustomerEmail>
+  <RecipientName>Jakub Rausch</RecipientName>
+  <RecipientCompanyName>Krav Maga 360</RecipientCompanyName>
+  <RecipientPhone/>
+  <RecipientAddress>ul. 28 Czerwca 1956 nr 222</RecipientAddress>
+  <RecipientZip>61-485</RecipientZip>
+  <RecipientCity>Poznań</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List polecony ekonomiczny</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38649115</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38649569</Id>
+  <Name>8 KOŃCÓWEK ORAL-B 3D WHITE DO SZCZOTECZKI VITALITY</Name>
+  <OrderId>6996036002</OrderId>
+  <CustomerLogin>nemo1990</CustomerLogin>
+  <CustomerEmail>allegrokuba@wp.pl</CustomerEmail>
+  <RecipientName>Jakub Nejman</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>507009822</RecipientPhone>
+  <RecipientAddress>Cicha 5</RecipientAddress>
+  <RecipientZip>62-740</RecipientZip>
+  <RecipientCity>Tuliszków</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List ekonomiczny</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38649569</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38649938</Id>
+  <Name>4 x KOŃCÓWKA DO ZĘBÓW DLA DZIECI ORAL-B VITALITY</Name>
+  <OrderId>7035818133</OrderId>
+  <CustomerLogin>czarnoola</CustomerLogin>
+  <CustomerEmail>czarnoola@o2.pl</CustomerEmail>
+  <RecipientName>Katarzyna Obrocka-Mońka</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>504741870</RecipientPhone>
+  <RecipientAddress>osikowa 9/9</RecipientAddress>
+  <RecipientZip>01-928</RecipientZip>
+  <RecipientCity>Warszawa</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List ekonomiczny</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38649938</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38652598</Id>
+  <Name>4 x KOŃCÓWKA DO ZĘBÓW DLA DZIECI ORAL-B VITALITY</Name>
+  <OrderId>7035818133</OrderId>
+  <CustomerLogin>Kina1984444</CustomerLogin>
+  <CustomerEmail>karolina.lyszkiewicz@wp.pl</CustomerEmail>
+  <RecipientName>Karolina Płaszaj</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>600451768</RecipientPhone>
+  <RecipientAddress>Bierzewicka 17d/5</RecipientAddress>
+  <RecipientZip>09-500</RecipientZip>
+  <RecipientCity>Gostynin</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List ekonomiczny</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38652598</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38653377</Id>
+  <Name>1 x KOŃCÓWKA GŁÓWKA ORAL-B BRAUN PRECISION CLEAN</Name>
+  <OrderId>6953735793</OrderId>
+  <CustomerLogin>mamalinowska</CustomerLogin>
+  <CustomerEmail>martamalinowska92@gmail.com</CustomerEmail>
+  <RecipientName>Marta Malinowska</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>790367007</RecipientPhone>
+  <RecipientAddress>Wólczyńska 69C m. 137</RecipientAddress>
+  <RecipientZip>01-931</RecipientZip>
+  <RecipientCity>Warszawa</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List ekonomiczny</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38653377</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38654303</Id>
+  <Name>KOŃCÓWKI GŁÓWKI ORAL-B STAGES POWER DLA DZIECI</Name>
+  <OrderId>6953735420</OrderId>
+  <CustomerLogin>patka455</CustomerLogin>
+  <CustomerEmail>anetapachocka@wp.pl</CustomerEmail>
+  <RecipientName>Aneta Pachocka</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>(512)804507</RecipientPhone>
+  <RecipientAddress>Gerbera 14 m. 7</RecipientAddress>
+  <RecipientZip>05-500</RecipientZip>
+  <RecipientCity>Piaseczno</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List ekonomiczny</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38654303</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38654649</Id>
+  <Name>4 x GŁÓWKA KOŃCÓWKA BRAUN ORAL-B PRECISION CLEAN</Name>
+  <OrderId>6953736250</OrderId>
+  <CustomerLogin>baksior8</CustomerLogin>
+  <CustomerEmail>baksior518@interia.pl</CustomerEmail>
+  <RecipientName>Daniel Iwan</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>693279813</RecipientPhone>
+  <RecipientAddress>CHRUŚLINA KOLONIA 14A</RecipientAddress>
+  <RecipientZip>24-340</RecipientZip>
+  <RecipientCity>Józefów</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List priorytetowy</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38654649</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38655653</Id>
+  <Name>16 KOŃCÓWEK - ZESTAW DO VITALITY ORAL-B 3D WHITE</Name>
+  <OrderId>7035736274</OrderId>
+  <CustomerLogin>PTHUMARCAR</CustomerLogin>
+  <CustomerEmail>PTHU.MARCAR@interia.pl</CustomerEmail>
+  <RecipientName>Marcin Grzeszczuk</RecipientName>
+  <RecipientCompanyName>PTHU MARCAR</RecipientCompanyName>
+  <RecipientPhone>48 516 680 431</RecipientPhone>
+  <RecipientAddress>ul.Okólna 38</RecipientAddress>
+  <RecipientZip>05-270</RecipientZip>
+  <RecipientCity>Marki</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>Pocztex Kurier48 pobraniowy</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38655653</transactionId>
+    <Name/>
+    <Quantity>2</Quantity>
+   </position>
+  </positions>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38655887</Id>
+  <Name>8 KOŃCÓWEK ORAL-B 3D WHITE DO SZCZOTECZKI VITALITY</Name>
+  <OrderId>6996036002</OrderId>
+  <CustomerLogin>H_ZiEnTaS</CustomerLogin>
+  <CustomerEmail>hubert2131991@interia.pl</CustomerEmail>
+  <RecipientName>Hubert Zięntek</RecipientName>
+  <RecipientCompanyName>ICA JAROCIN Sp. z o.o. Sp. k.</RecipientCompanyName>
+  <RecipientPhone>726353472</RecipientPhone>
+  <RecipientAddress>ul. Niepodległości 26</RecipientAddress>
+  <RecipientZip>63-200</RecipientZip>
+  <RecipientCity>Jarocin</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List ekonomiczny</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38655887</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
+   </position>
+  </positions>
+  <notes>
+   <note>
+    <transactionId>38655887</transactionId>
+    <Author/>
+    <Date>2017-11-18 12:15:24</Date>
+    <Note>Witam,
+Proszę o szybką wysyłkę.</Note>
+   </note>
+  </notes>
+ </transaction>
+ <transaction>
+  <parentId/>
+  <Id>38657942</Id>
+  <Name>4 KOŃCÓWKI ORAL-B 3D WHITE DO SZCZOTECZKI VITALITY</Name>
+  <OrderId>6996038491</OrderId>
+  <CustomerLogin>wiola210895</CustomerLogin>
+  <CustomerEmail>wiola11@gmail.com</CustomerEmail>
+  <RecipientName>Wioletta Żołyniak</RecipientName>
+  <RecipientCompanyName/>
+  <RecipientPhone>696852399</RecipientPhone>
+  <RecipientAddress>Poznańska 11/112</RecipientAddress>
+  <RecipientZip>30-012</RecipientZip>
+  <RecipientCity>Kraków</RecipientCity>
+  <RecipientCountryCode>PL</RecipientCountryCode>
+  <RecipientCountryName>Polska</RecipientCountryName>
+  <DeliveryType>List ekonomiczny</DeliveryType>
+  <positions>
+   <position>
+    <transactionId>38657942</transactionId>
+    <Name/>
+    <Quantity>1</Quantity>
    </position>
   </positions>
  </transaction>

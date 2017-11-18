@@ -1,9 +1,11 @@
 package org.zappmed.app.model.xml;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 
 import java.util.Date;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Range {
 
     @JacksonXmlProperty(localName = "from")
