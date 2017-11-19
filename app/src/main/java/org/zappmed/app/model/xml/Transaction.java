@@ -82,6 +82,10 @@ public class Transaction {
         return id;
     }
 
+    public void setSubtransactions(Subtransactions subtransactions) {
+        this.subtransactions = subtransactions;
+    }
+
     public String getParentId() {
         return parentId;
     }

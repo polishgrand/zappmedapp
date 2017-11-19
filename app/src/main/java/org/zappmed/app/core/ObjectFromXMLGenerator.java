@@ -9,6 +9,8 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ObjectFromXMLGenerator {
 
@@ -24,8 +26,37 @@ public class ObjectFromXMLGenerator {
             model = objectMapper.readValue(
                     StringUtils.toEncodedString(Files.readAllBytes(Paths.get("C:\\Users\\polishgrand\\Documents\\GitHub\\zappmedapp\\app\\src\\main\\resources\\test_data.xml")), StandardCharsets.UTF_8),
                     Transactions.class);
+            completeModel();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    private void completeModel() {
+        for (Transaction transaction : model.getTransaction()) {
+            if (transaction.getSubtransactions() == null) {
+                Subtransactions subtransactions = new Subtransactions();
+                Subtransaction subtransaction = new Subtransaction();
+
+                subtransaction.setName(transaction.getName());
+                subtransaction.setOrderId(transaction.getOrderId());
+                subtransaction.setTransactionID(transaction.getId());
+
+                List<Subtransaction> subtransactionList = new ArrayList<>();
+                subtransactionList.add(subtransaction);
+
+                subtransactions.setSubtransaction(subtransactionList);
+                transaction.setSubtransactions(subtransactions);
+            }
+
+            if (transaction.getPositions() != null && transaction.getSubtransactions() != null) {
+                List<Subtransaction> subtransactionList = transaction.getSubtransactions().getSubtransaction();
+                List<Position> positionList = transaction.getPositions().getPosition();
+
+                for (int i = 0; i<subtransactionList.size(); i++) {
+                    subtransactionList.get(i).setQuantity(positionList.get(i).getQuantity());
+                }
+            }
         }
     }
 

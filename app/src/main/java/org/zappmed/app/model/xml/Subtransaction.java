@@ -2,7 +2,6 @@ package org.zappmed.app.model.xml;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
-import com.itextpdf.text.Chunk;
 import com.itextpdf.text.Paragraph;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -17,7 +16,30 @@ public class Subtransaction {
     @JacksonXmlProperty(localName = "OrderId")
     private String OrderId;
 
+    private int quantity;
+
     public Subtransaction() {
+    }
+
+    public void setTransactionID(String transactionID) {
+        this.transactionID = transactionID;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setOrderId(String orderId) {
+        OrderId = orderId;
+    }
+
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     public String getTransactionID() {
@@ -43,7 +65,7 @@ public class Subtransaction {
     public Paragraph toPDFString() {
 
         Paragraph subtransactionParagraph = new Paragraph();
-        subtransactionParagraph.add(name + " (" + OrderId + ")");
+        subtransactionParagraph.add(name + " (" + OrderId + ")" + " - Ilość: " + getQuantity() + " szt.");
         return subtransactionParagraph;
     }
 }

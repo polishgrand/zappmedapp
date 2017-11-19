@@ -12,6 +12,10 @@ public class Subtransactions {
     @JacksonXmlElementWrapper(localName = "subtransactions", useWrapping = false)
     private List<Subtransaction> subtransaction;
 
+    public void setSubtransaction(List<Subtransaction> subtransaction) {
+        this.subtransaction = subtransaction;
+    }
+
     public List<Subtransaction> getSubtransaction() {
         return subtransaction;
     }
