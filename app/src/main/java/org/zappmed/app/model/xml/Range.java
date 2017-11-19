@@ -17,39 +17,23 @@ public class Range {
     @JacksonXmlProperty(localName = "sections")
     private String section;
 
-    public Range() {
-    }
-
     public Date getDateFrom() {
         return dateFrom;
-    }
-
-    public void setDateFrom(Date dateFrom) {
-        this.dateFrom = dateFrom;
     }
 
     public Date getDateTo() {
         return dateTo;
     }
 
-    public void setDateTo(Date dateTo) {
-        this.dateTo = dateTo;
-    }
-
     public String getSection() {
         return section;
     }
 
-    public void setSection(String section) {
-        this.section = section;
-    }
-
     @Override
     public String toString() {
-        return "Range{" +
-                "dateFrom=" + dateFrom +
-                ", dateTo=" + dateTo +
-                ", section='" + section + '\'' +
-                '}';
+        return "Range {" +
+                "\n\tdateFrom = " + dateFrom +
+                ",\n\tdateTo = " + dateTo +
+                ",\n\tsection = '" + section + "\' }";
     }
 }

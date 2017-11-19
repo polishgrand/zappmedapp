@@ -3,6 +3,9 @@ package org.zappmed.app.model.xml;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+import com.itextpdf.text.Chunk;
+import com.itextpdf.text.Element;
+import com.itextpdf.text.Paragraph;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,9 +13,22 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Transaction {
 
+    private int transactionID;
 
     @JacksonXmlProperty(localName = "Id")
     private String id;
+
+    @JacksonXmlProperty(localName = "parentId")
+    private String parentId;
+
+    @JacksonXmlProperty(localName = "RecipientCompanyName")
+    private String RecipientCompanyName;
+
+    @JacksonXmlProperty(localName = "RecipientCountryCode")
+    private String RecipientCountryCode;
+
+    @JacksonXmlProperty(localName = "RecipientCountryName")
+    private String RecipientCountryName;
 
     @JacksonXmlProperty(localName = "Name")
     private String name;
@@ -44,144 +60,125 @@ public class Transaction {
     @JacksonXmlProperty(localName = "DeliveryType")
     private String deliveryType;
 
-    @JacksonXmlElementWrapper(localName = "subtransaction", useWrapping = false)
-    private List<Subtransacion> subtransacions;
+    @JacksonXmlProperty(localName = "subtransactions")
+    private Subtransactions subtransactions;
 
-    @JacksonXmlElementWrapper(localName = "position", useWrapping = false)
-    private List<Position> positions;
+    @JacksonXmlProperty(localName = "positions")
+    private Positions positions;
 
-    @JacksonXmlProperty(localName = "from")
-    private List<Note> noteList;
+    @JacksonXmlProperty(localName = "notes")
+    private Notes notes;
 
-    public Transaction() {
+
+    public int getTransactionID() {
+        return transactionID;
+    }
+
+    public void setTransactionID(int transactionID) {
+        this.transactionID = transactionID;
     }
 
     public String getId() {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public String getParentId() {
+        return parentId;
+    }
+
+    public String getRecipientCompanyName() {
+        return RecipientCompanyName;
+    }
+
+    public String getRecipientCountryCode() {
+        return RecipientCountryCode;
+    }
+
+    public String getRecipientCountryName() {
+        return RecipientCountryName;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getOrderId() {
         return orderId;
-    }
-
-    public void setOrderId(String orderId) {
-        this.orderId = orderId;
     }
 
     public String getCustomerLogin() {
         return customerLogin;
     }
 
-    public void setCustomerLogin(String customerLogin) {
-        this.customerLogin = customerLogin;
-    }
-
     public String getCustomerEmail() {
         return customerEmail;
-    }
-
-    public void setCustomerEmail(String customerEmail) {
-        this.customerEmail = customerEmail;
     }
 
     public String getRecipientName() {
         return recipientName;
     }
 
-    public void setRecipientName(String recipientName) {
-        this.recipientName = recipientName;
-    }
-
     public String getRecipientPhone() {
         return recipientPhone;
-    }
-
-    public void setRecipientPhone(String recipientPhone) {
-        this.recipientPhone = recipientPhone;
     }
 
     public String getRecipientAddress() {
         return recipientAddress;
     }
 
-    public void setRecipientAddress(String recipientAddress) {
-        this.recipientAddress = recipientAddress;
-    }
-
     public String getRecipientZip() {
         return recipientZip;
-    }
-
-    public void setRecipientZip(String recipientZip) {
-        this.recipientZip = recipientZip;
     }
 
     public String getRecipientCity() {
         return recipientCity;
     }
 
-    public void setRecipientCity(String recipientCity) {
-        this.recipientCity = recipientCity;
-    }
-
     public String getDeliveryType() {
         return deliveryType;
     }
 
-    public void setDeliveryType(String deliveryType) {
-        this.deliveryType = deliveryType;
+    public Subtransactions getSubtransactions() {
+        return subtransactions;
     }
 
-    public List<Subtransacion> getSubtransacions() {
-        return subtransacions;
-    }
-
-    public void setSubtransacions(List<Subtransacion> subtransacions) {
-        this.subtransacions = subtransacions;
-    }
-
-    public List<Position> getPositions() {
+    public Positions getPositions() {
         return positions;
     }
 
-    public void setPositions(List<Position> positions) {
-        this.positions = positions;
-    }
-
-    public List<Note> getNoteList() {
-        return noteList;
-    }
-
-    public void setNoteList(List<Note> noteList) {
-        this.noteList = noteList;
+    public Notes getNotes() {
+        return notes;
     }
 
     @Override
     public String toString() {
-        return "Transaction{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", orderId='" + orderId + '\'' +
-                ", customerLogin='" + customerLogin + '\'' +
-                ", customerEmail='" + customerEmail + '\'' +
-                ", recipientName='" + recipientName + '\'' +
-                ", recipientPhone='" + recipientPhone + '\'' +
-                ", recipientAddress='" + recipientAddress + '\'' +
-                ", recipientZip='" + recipientZip + '\'' +
-                ", recipientCity='" + recipientCity + '\'' +
-                ", deliveryType='" + deliveryType + '\'' +
-                '}';
+        return "Transaction {" +
+                "\n\tid = '" + id + '\'' +
+                ",\n\tname = '" + name + '\'' +
+                ",\n\torderId = '" + orderId + '\'' +
+                ",\n\tcustomerLogin = '" + customerLogin + '\'' +
+                ",\n\tcustomerEmail = '" + customerEmail + '\'' +
+                ",\n\trecipientName = '" + recipientName + '\'' +
+                ",\n\trecipientPhone = '" + recipientPhone + '\'' +
+                ",\n\trecipientAddress = '" + recipientAddress + '\'' +
+                ",\n\trecipientZip = '" + recipientZip + '\'' +
+                ",\n\trecipientCity = '" + recipientCity + '\'' +
+                ",\n\tdeliveryType = '" + deliveryType + "\' }";
+    }
+
+    public Paragraph toPDFString() {
+
+        Paragraph transactionParagraph = new Paragraph();
+        if (customerLogin == null)
+        {
+            transactionParagraph.add(transactionID + ". Kupujący: niezarejestrowany - " + recipientName + ";");
+        } else {
+            transactionParagraph.add(transactionID + ". Kupujący: " + customerLogin + " - " + recipientName + ";");
+        }
+        transactionParagraph.add(Chunk.NEWLINE);
+        transactionParagraph.add("Adresat: " + recipientAddress + ", " + recipientZip + ", " + recipientCity + ";");
+        transactionParagraph.add(Chunk.NEWLINE);
+        transactionParagraph.add("Sposób dostawy: " + deliveryType + ";");
+        return transactionParagraph;
     }
 }

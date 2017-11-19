@@ -18,25 +18,11 @@ public class Transactions {
     @JacksonXmlElementWrapper(localName = "transaction", useWrapping = false)
     private List<Transaction> transaction;
 
-    public Transactions() {
-    }
-
     public Range getRange() {
         return range;
     }
 
     public List<Transaction> getTransaction() {
-        if (transaction == null) {
-            transaction = new ArrayList<>();
-        }
-        return this.transaction;
-    }
-
-    @Override
-    public String toString() {
-        return "Transactions{" +
-                "range=" + range +
-                ", transactionList=" + transaction +
-                '}';
+        return transaction;
     }
 }
