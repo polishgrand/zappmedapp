@@ -5,7 +5,6 @@ import com.itextpdf.text.pdf.BaseFont;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.text.pdf.draw.DottedLineSeparator;
 import com.itextpdf.text.pdf.draw.LineSeparator;
-import com.itextpdf.text.xml.simpleparser.NewLineHandler;
 import org.zappmed.app.model.xml.Note;
 import org.zappmed.app.model.xml.Subtransaction;
 import org.zappmed.app.model.xml.Transaction;
@@ -15,24 +14,33 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Map;
+
 public class PDFFromObject {
     private Document documentPDF = new Document(PageSize.A4, 50, 50, 25, 25);
     private LocalDateTime today = LocalDateTime.now();
-    private String filePath = "C:\\Users\\polishgrand\\Documents\\GitHub\\zappmedapp\\app\\src\\main\\resources\\test_" +
-            today.format(DateTimeFormatter.ofPattern("yyyy_MM_dd_HH_mm_ss"))+ ".pdf";
-    private String baseFontPath = "C:\\Users\\polishgrand\\Documents\\GitHub\\zappmedapp\\app\\src\\main\\resources\\arial.ttf";
+
+//    private String filePath = "C:\\Users\\polishgrand\\Documents\\GitHub\\zappmedapp\\app\\src\\main\\resources\\test_" +
+//            today.format(DateTimeFormatter.ofPattern("yyyy_MM_dd_HH_mm_ss"))+ ".pdf";
+
+    private String filePath = today.format(DateTimeFormatter.ofPattern("yyyy_MM_dd_HH_mm_ss"))+ ".pdf";
+
+//    private String baseFontPath = "C:\\Users\\polishgrand\\Documents\\GitHub\\zappmedapp\\app\\src\\main\\resources\\arial.ttf";
+
+    private String baseFontPath = "font/arial.ttf";
+
     private static BaseFont font;
     private static Font titleFont;
     private static Font defaultFont;
 
-    public Document generatePDFFromObject(ObjectFromXMLGenerator objectFromXMLGenerator) {
+    public Document generatePDFFromObject(ObjectFromXMLGenerator objectFromXMLGenerator, Map<String,Object> baseProductMap) {
 
         try {
             fontGenerator();
-            PdfWriter.getInstance(documentPDF, new FileOutputStream(filePath));
+            PdfWriter.getInstance(documentPDF, new FileOutputStream("lista_wysylkowa_" + objectFromXMLGenerator.getModel().getRange().getSection().toLowerCase() + "_" + filePath));
             addMeta();
             documentPDF.open();
-            addContent(objectFromXMLGenerator);
+            addContent(objectFromXMLGenerator, baseProductMap);
             documentPDF.close();
         } catch (DocumentException e) {
             e.printStackTrace();
@@ -48,27 +56,39 @@ public class PDFFromObject {
         documentPDF.addTitle("Lista wysyłkowa " + today.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
     }
 
-    private void addContent(ObjectFromXMLGenerator objectFromXMLGenerator) {
+    private void addContent(ObjectFromXMLGenerator objectFromXMLGenerator, Map<String,Object> baseProductMap) {
         try {
             documentPDF.add(new Paragraph("Lista wysyłkowa: " +
                     objectFromXMLGenerator.getModel().getRange().getSection(), titleFont));
-            addLineSeparator();
+            documentPDF.add(addLineSeparator());
+            documentPDF.add(Chunk.NEWLINE);
 
             for (Transaction transaction : objectFromXMLGenerator.getModel().getTransaction()) {
-                addTransactionToPDF(transaction);
+                Paragraph transactionParagraph = new Paragraph();
+                transactionParagraph.setLeading(15);
+                transactionParagraph.setFont(defaultFont);
+                transactionParagraph.add(addTransactionToPDF(transaction));
                 if (transaction.getSubtransactions() != null) {
-                    addDottedLineSeparator();
+                    transactionParagraph.add(addDottedLineSeparator());
                     for (Subtransaction subtransaction : transaction.getSubtransactions().getSubtransaction()) {
-                        addSubtransactionToPDF(subtransaction);
+                        transactionParagraph.add(addSubtransactionToPDF(subtransaction));
+                        String orderDescription = "produkt nieznany";
+                        if (baseProductMap.get(subtransaction.getOrderId()) != null){
+                            orderDescription = baseProductMap.get(subtransaction.getOrderId()).toString();
+                        }
+                        transactionParagraph.add(orderDescription);
+                        transactionParagraph.add(Chunk.NEWLINE);
                     }
                 }
                 if (transaction.getNotes() != null) {
-                    addDottedLineSeparator();
+                    transactionParagraph.add(addDottedLineSeparator());
                     for (Note note : transaction.getNotes().getNote()) {
-                        addNoteToPDF(note);
+                        transactionParagraph.add(addNoteToPDF(note));
                     }
                 }
-                addLineSeparator();
+                transactionParagraph.add(new LineSeparator());
+                transactionParagraph.setKeepTogether(true);
+                documentPDF.add(transactionParagraph);
             }
 
         } catch (DocumentException e) {
@@ -76,61 +96,28 @@ public class PDFFromObject {
         }
     }
 
-    private void addTransactionToPDF(Transaction transaction) {
-        try {
-            Paragraph recipientData = new Paragraph();
-            recipientData.setFont(defaultFont);
-            recipientData.add(transaction.toPDFString());
-            documentPDF.add(recipientData);
-        } catch (DocumentException e) {
-            e.printStackTrace();
-        }
+    private Paragraph addTransactionToPDF(Transaction transaction) {
+        return transaction.toPDFString();
     }
 
-    private void addSubtransactionToPDF(Subtransaction subtransaction) {
-        try {
-            Paragraph subtransactionData = new Paragraph();
-            subtransactionData.setFont(defaultFont);
-            subtransactionData.add(subtransaction.toPDFString());
-            documentPDF.add(subtransactionData);
-        } catch (DocumentException e) {
-            e.printStackTrace();
-        }
+    private Paragraph addSubtransactionToPDF(Subtransaction subtransaction) {
+        return subtransaction.toPDFString();
     }
 
-    private void addNoteToPDF(Note note) {
-        try {
-            Paragraph noteData = new Paragraph();
-            noteData.setFont(defaultFont);
-            noteData.add(note.toPDFString());
-            documentPDF.add(noteData);
-        } catch (DocumentException e) {
-            e.printStackTrace();
-        }
+    private Paragraph addNoteToPDF(Note note) {
+        return note.toPDFString();
     }
 
-    private void addLineSeparator() {
+    private Paragraph addLineSeparator() {
         Paragraph paragraph = new Paragraph();
         paragraph.add(new LineSeparator());
-        paragraph.add(Chunk.NEWLINE);
-
-        try {
-            documentPDF.add(paragraph);
-        } catch (DocumentException e) {
-            e.printStackTrace();
-        }
+        return paragraph;
     }
 
-    private void addDottedLineSeparator() {
+    private Paragraph addDottedLineSeparator() {
         Paragraph paragraph = new Paragraph();
         paragraph.add(new DottedLineSeparator());
-        paragraph.add(Chunk.NEWLINE);
-
-        try {
-            documentPDF.add(paragraph);
-        } catch (DocumentException e) {
-            e.printStackTrace();
-        }
+        return paragraph;
     }
 
     private void addEmptyLine(int number) {

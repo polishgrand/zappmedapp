@@ -177,12 +177,14 @@ public class Transaction {
         {
             transactionParagraph.add(transactionID + ". Kupujący: niezarejestrowany - " + recipientName + ";");
         } else {
-            transactionParagraph.add(transactionID + ". Kupujący: " + customerLogin + " - " + recipientName + ";");
+            transactionParagraph.add(transactionID + ". Kupujący: " + customerLogin + " - " + customerEmail +";");
         }
         transactionParagraph.add(Chunk.NEWLINE);
-        transactionParagraph.add("Adresat: " + recipientAddress + ", " + recipientZip + ", " + recipientCity + ";");
+        transactionParagraph.add("Adresat: " + recipientName  + ", "  + recipientAddress + ", " + recipientZip + ", " + recipientCity + ";");
         transactionParagraph.add(Chunk.NEWLINE);
         transactionParagraph.add("Sposób dostawy: " + deliveryType + ";");
+        transactionParagraph.setSpacingBefore(0);
+        transactionParagraph.setSpacingAfter(0);
         return transactionParagraph;
     }
 }

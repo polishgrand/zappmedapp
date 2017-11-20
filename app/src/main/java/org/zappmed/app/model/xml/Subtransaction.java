@@ -66,6 +66,8 @@ public class Subtransaction {
 
         Paragraph subtransactionParagraph = new Paragraph();
         subtransactionParagraph.add(name + " (" + OrderId + ")" + " - Ilość: " + getQuantity() + " szt.");
+        subtransactionParagraph.setSpacingBefore(0);
+        subtransactionParagraph.setSpacingAfter(0);
         return subtransactionParagraph;
     }
 }

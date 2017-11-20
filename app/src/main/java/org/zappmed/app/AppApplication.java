@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.zappmed.app.core.ObjectFromXMLGenerator;
 import org.zappmed.app.core.PDFFromObject;
-import org.zappmed.app.model.xml.Transaction;
+import org.zappmed.app.core.products.ProductBase;
 
 @SpringBootApplication
 public class AppApplication {
@@ -14,11 +14,12 @@ public class AppApplication {
 
 		ObjectFromXMLGenerator objectFromXMLGenerator = new ObjectFromXMLGenerator();
 		objectFromXMLGenerator.generateModelFromXML();
-
 		objectFromXMLGenerator.displayModel();
 
-		PDFFromObject pdfFromObject = new PDFFromObject();
-		pdfFromObject.generatePDFFromObject(objectFromXMLGenerator);
+		ProductBase productBase = new ProductBase();
+		productBase.generateMap();
 
+		PDFFromObject pdfFromObject = new PDFFromObject();
+		pdfFromObject.generatePDFFromObject(objectFromXMLGenerator, productBase.getBaseProductMap());
 	}
 }
