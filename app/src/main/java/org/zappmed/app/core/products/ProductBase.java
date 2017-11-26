@@ -10,8 +10,8 @@ import java.util.Map;
 
 public class ProductBase {
 
-    private String basePath = "C:\\Users\\polishgrand\\Documents\\GitHub\\zappmedapp\\app\\src\\main\\resources\\jsonbasefile\\database.json";
-    //private String basePath = "jsonbasefile/database.json";
+    //private String basePath = "C:\\Users\\polishgrand\\Documents\\GitHub\\zappmedapp\\app\\src\\main\\resources\\jsonbasefile\\database.json";
+    private String basePath = "/jsonbasefile/database.json";
 
     private Map<String,Object> baseProductMap;
 
@@ -33,9 +33,11 @@ public class ProductBase {
 
     public void generateMap() {
         try {
-            File file = new File(basePath);
+            InputStream jsonStream = ProductBase.class.getResourceAsStream(basePath);
+            BufferedInputStream jsonReader = new BufferedInputStream(jsonStream);
             ObjectMapper mapper = new ObjectMapper();
-            baseProductMap = mapper.readValue(file,new TypeReference<Map<String, Object>>() {});
+
+            baseProductMap = mapper.readValue(jsonReader ,new TypeReference<Map<String, Object>>() {});
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -20,12 +20,7 @@ public class PDFFromObject {
     private Document documentPDF = new Document(PageSize.A4, 50, 50, 25, 25);
     private LocalDateTime today = LocalDateTime.now();
 
-//    private String filePath = "C:\\Users\\polishgrand\\Documents\\GitHub\\zappmedapp\\app\\src\\main\\resources\\test_" +
-//            today.format(DateTimeFormatter.ofPattern("yyyy_MM_dd_HH_mm_ss"))+ ".pdf";
-
     private String filePath = today.format(DateTimeFormatter.ofPattern("yyyy_MM_dd_HH_mm_ss"))+ ".pdf";
-
-//    private String baseFontPath = "C:\\Users\\polishgrand\\Documents\\GitHub\\zappmedapp\\app\\src\\main\\resources\\arial.ttf";
 
     private String baseFontPath = "font/arial.ttf";
 
