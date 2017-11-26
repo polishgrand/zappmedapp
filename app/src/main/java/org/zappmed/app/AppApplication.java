@@ -26,17 +26,7 @@ public class AppApplication {
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
-//		ObjectFromXMLGenerator objectFromXMLGenerator = new ObjectFromXMLGenerator();
-//		objectFromXMLGenerator.generateModelFromXML();
-//		objectFromXMLGenerator.displayModel();
-//
-//		ProductBase productBase = new ProductBase();
-//		productBase.generateMap();
-//
-//		PDFFromObject pdfFromObject = new PDFFromObject();
-//		pdfFromObject.generatePDFFromObject(objectFromXMLGenerator, productBase.getBaseProductMap());
 
 		MainForm mainForm = new MainForm();
-
 	}
 }

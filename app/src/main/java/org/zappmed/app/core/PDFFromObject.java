@@ -114,18 +114,6 @@ public class PDFFromObject {
         return paragraph;
     }
 
-    private void addEmptyLine(int number) {
-        Paragraph paragraph = new Paragraph();
-        for (int i = 0; i < number; i++) {
-            paragraph.add(Chunk.NEWLINE);
-        }
-        try {
-            documentPDF.add(paragraph);
-        } catch (DocumentException e) {
-            e.printStackTrace();
-        }
-    }
-
     private void fontGenerator() {
         try {
             font = BaseFont.createFont(baseFontPath, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
