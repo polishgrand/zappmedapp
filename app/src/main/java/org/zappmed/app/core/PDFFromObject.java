@@ -21,7 +21,6 @@ public class PDFFromObject {
     private LocalDateTime today = LocalDateTime.now();
 
     private String filePath = today.format(DateTimeFormatter.ofPattern("yyyy_MM_dd_HH_mm_ss"))+ ".pdf";
-
     private String baseFontPath = "font/arial.ttf";
 
     private static BaseFont font;

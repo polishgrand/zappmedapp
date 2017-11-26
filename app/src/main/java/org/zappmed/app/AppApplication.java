@@ -15,6 +15,17 @@ public class AppApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AppApplication.class, args);
 
+		try {
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			e.printStackTrace();
+		} catch (UnsupportedLookAndFeelException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
 //		ObjectFromXMLGenerator objectFromXMLGenerator = new ObjectFromXMLGenerator();
 //		objectFromXMLGenerator.generateModelFromXML();
 //		objectFromXMLGenerator.displayModel();

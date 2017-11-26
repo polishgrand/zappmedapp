@@ -16,9 +16,19 @@ import java.util.List;
 public class ObjectFromXMLGenerator {
 
     private Transactions model;
+    private File fileXML;
 
+    //methods
     public Transactions getModel() {
         return model;
+    }
+
+    public File getFileXML() {
+        return fileXML;
+    }
+
+    public void setFileXML(File fileXML) {
+        this.fileXML = fileXML;
     }
 
     public void generateModelFromXML() {
@@ -33,8 +43,22 @@ public class ObjectFromXMLGenerator {
         }
     }
 
+    public void generateModelFromXMLFile() {
+        ObjectMapper objectMapper = new XmlMapper();
+        try {
+            model = objectMapper.readValue(
+                    StringUtils.toEncodedString(Files.readAllBytes(fileXML.toPath()), StandardCharsets.UTF_8), Transactions.class);
+            completeModel();
+            displayModel();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     private void completeModel() {
+        int counterTransaction=1;
         for (Transaction transaction : model.getTransaction()) {
+            transaction.setTransactionID(counterTransaction);
             if (transaction.getSubtransactions() == null) {
                 Subtransactions subtransactions = new Subtransactions();
                 Subtransaction subtransaction = new Subtransaction();
@@ -58,6 +82,7 @@ public class ObjectFromXMLGenerator {
                     subtransactionList.get(i).setQuantity(positionList.get(i).getQuantity());
                 }
             }
+            counterTransaction++;
         }
     }
 
@@ -67,7 +92,7 @@ public class ObjectFromXMLGenerator {
         int counterTransaction=1;
         for (Transaction transaction : model.getTransaction()) {
             System.out.println(counterTransaction + ": " + transaction.toString());
-            transaction.setTransactionID(counterTransaction);
+            //transaction.setTransactionID(counterTransaction);
             if (transaction.getSubtransactions() != null) {
                 System.out.println();
                 for (Subtransaction subtransaction : transaction.getSubtransactions().getSubtransaction()) {
