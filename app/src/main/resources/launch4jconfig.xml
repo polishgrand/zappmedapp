@@ -3,7 +3,7 @@
   <dontWrapJar>false</dontWrapJar>
   <headerType>gui</headerType>
   <jar>C:\Users\polishgrand\Documents\GitHub\zappmedapp\app\target\ZappMed-1.0.jar</jar>
-  <outfile>C:\Users\polishgrand\Desktop\ZappMed\ZappMed.exe</outfile>
+  <outfile>C:\Users\polishgrand\Desktop\ZappMed.exe</outfile>
   <errTitle>Java not installed</errTitle>
   <cmdLine></cmdLine>
   <chdir>.</chdir>
